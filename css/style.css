@@ -1,0 +1,426 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.wrapper header {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.wrapper header img {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 82px;
+  height: 65px;
+}
+
+.wrapper header h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #a5a5a5;
+}
+
+.wrapper header h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  margin: 15px 0;
+  color: #4c4c4c;
+}
+
+.wrapper header h1 span {
+  color: #1abc9c;
+}
+
+.wrapper main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.wrapper main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding-left: 110px;
+  padding-right: 50px;
+  width: calc(50% - 20px);
+}
+
+.wrapper main form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.wrapper main form .name input {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin: 10px;
+  width: 96%;
+}
+
+.wrapper main form input {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  padding: 14px;
+  margin: 5px 10px;
+}
+
+.wrapper main form textarea {
+  margin: 30px 10px;
+  padding: 14px;
+  resize: none;
+}
+
+.wrapper main form button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 18px 30px;
+  width: 185px;
+  color: #fff;
+  background-color: #1abc9c;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.wrapper main section {
+  margin: 10px;
+  width: calc(40% - 20px);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #939598;
+}
+
+.wrapper .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 220px;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.wrapper .parts .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  height: 140px;
+  width: calc(30% - 20px);
+  border-right: 1px solid #818181;
+  color: #4c4c4c;
+}
+
+.wrapper .parts .part:last-child {
+  border-right: none;
+}
+
+.wrapper .parts .part a {
+  text-decoration: none;
+  color: #1abc9c;
+}
+
+.wrapper .parts .part h4 {
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.wrapper .parts .part .phone {
+  width: 30px;
+  height: 50px;
+}
+
+.wrapper .parts .part .clock {
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper .parts .part .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 65px;
+  height: 50px;
+}
+
+footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #1abc9c;
+}
+
+footer .wrapper {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+footer .wrapper .description {
+  padding: 40px 7%;
+}
+
+footer .wrapper .description h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+  font-size: 46px;
+  color: #f7f7f7;
+}
+
+footer .wrapper .description h3 span {
+  font-weight: bold;
+}
+
+footer .wrapper .description p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: 1.67px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .wrapper main {
+    width: calc(100% - 20px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .wrapper main form {
+    width: calc(100% - 20px);
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .wrapper main form button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrapper .parts {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .wrapper .parts .part {
+    width: 30%;
+    border: none;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .wrapper main form .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .wrapper main form .name input {
+    margin: 10px auto;
+  }
+
+  .wrapper main form input {
+    padding: 10px;
+    margin: 10px auto;
+    width: 96%;
+  }
+
+  .wrapper main form textarea {
+    padding: 10px 10px;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper .parts .part {
+    width: calc(100% - 20px);
+  }
+}
